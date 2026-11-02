@@ -45,5 +45,3 @@ Master registry: https://github.com/PCakes303/agent-intelligence-ecosystem
 
 Main public identity: https://github.com/HuffmanMainNode
 
-## License
-Apache-2.0.
