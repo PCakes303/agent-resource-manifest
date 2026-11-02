@@ -51,14 +51,16 @@
     "permissions": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
+        "minLength": 1
       },
       "uniqueItems": true
     },
     "dependencies": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
+        "minLength": 1
       },
       "uniqueItems": true
     },
@@ -74,7 +76,8 @@
           ]
         },
         "digest": {
-          "type": "string"
+          "type": "string",
+          "minLength": 1
         }
       },
       "required": [
