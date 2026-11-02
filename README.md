@@ -20,8 +20,9 @@ Defines portable, machine-readable manifests for agent tools, skills, models, da
 - .github/workflows/validate.yml — CI validation.
 
 ## Validate locally
-Requires Python 3.10+; no third-party packages are needed.
+Requires Python 3.10+. Install the pinned development validator dependency:
 
+    python -m pip install -r requirements-dev.txt
     python tools/validate_manifest.py
     python -m unittest discover -s tests -v
 
@@ -33,7 +34,7 @@ A manifest describes a resource and its requested permissions; it does not grant
 The repository's code, documentation, schemas, examples, and other materials do not yet have an approved license decision. No root `LICENSE` file or GitHub license declaration is present. Reuse and redistribution rights must not be assumed; licensing remains pending repository-specific review.
 
 ## Status
-Scaffolded, v0.1.0. The format, example, reference validator, tests, and CI are initial contracts—not a production package manager or execution runtime.
+Scaffolded, v0.1.0. The format, example, schema-backed reference validator, tests, and CI are initial contracts—not a production package manager or execution runtime.
 
 ## Entry-level build
 
