@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.0",
+  "capabilities_version": "1.1.0",
   "repository": "agent-resource-manifest",
+  "repository_id": "resource-manifest",
+  "maturity": "scaffolding",
   "capabilities": [
     {
       "id": "resource.manifest",
+      "name": "Declarative resource manifest format",
       "status": "scaffolded",
-      "description": "Declarative resource manifest format."
+      "description": "JSON Schema, example resource, and contract documentation are present.",
+      "evidence": [
+        "schemas/resource-manifest.schema.json",
+        "examples/tool-resource.json",
+        "docs/RESOURCE-MANIFEST.md"
+      ],
+      "limitations": [
+        "Scaffolding only; downstream production use is not certified."
+      ]
     },
     {
       "id": "resource.validation",
-      "status": "planned",
-      "description": "Reference validator and policy checks."
+      "name": "Reference manifest validator and policy checks",
+      "status": "scaffolded",
+      "description": "A local validator and automated tests are present; no production registry or executor is provided.",
+      "evidence": [
+        "tools/validate_manifest.py",
+        "tests/"
+      ],
+      "limitations": [
+        "Scaffolding only; downstream production use is not certified."
+      ]
     }
+  ],
+  "explicit_non_capabilities": [
+    "Resource execution or installation",
+    "Publisher authentication",
+    "Authorization grants based solely on manifest validity"
   ]
 }
