@@ -59,10 +59,17 @@ class ResourceManifestValidationTests(unittest.TestCase):
         self.assert_both_reject({**VALID, "dependencies": ["dep", "dep"]})
         self.assert_both_reject({**VALID, "dependencies": [""]})
 
+    def test_permission_and_dependency_collection_bounds(self):
+        self.assert_both_reject({**VALID, "permissions": ["x" * 129]})
+        self.assert_both_reject({**VALID, "permissions": [f"permission.{i}" for i in range(129)]})
+        self.assert_both_reject({**VALID, "dependencies": ["x" * 129]})
+        self.assert_both_reject({**VALID, "dependencies": [f"dependency.{i}" for i in range(129)]})
+
     def test_integrity_contract_is_strict(self):
         self.assert_both_reject({**VALID, "integrity": {"algorithm": "md5", "digest": "x"}})
         self.assert_both_reject({**VALID, "integrity": {"algorithm": "sha256", "digest": "x", "extra": True}})
         self.assert_both_reject({**VALID, "integrity": {"algorithm": "sha256", "digest": ""}})
+        self.assert_both_reject({**VALID, "integrity": {"algorithm": "sha512", "digest": "x" * 129}})
 
     def test_cli_example_is_schema_valid(self):
         example = json.loads((Path(__file__).resolve().parents[1] / "examples" / "tool-resource.json").read_text(encoding="utf-8"))
