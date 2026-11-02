@@ -1,0 +1,17 @@
+{
+  "manifest_version": "1.0",
+  "id": "example.math.add",
+  "kind": "tool",
+  "name": "Example addition tool",
+  "version": "0.1.0",
+  "description": "Illustrative, non-executable manifest.",
+  "entrypoint": "examples/add.py",
+  "permissions": [
+    "compute.basic"
+  ],
+  "dependencies": [],
+  "integrity": {
+    "algorithm": "sha256",
+    "digest": "replace-with-published-digest"
+  }
+}
