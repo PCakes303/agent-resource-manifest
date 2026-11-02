@@ -1,13 +1,27 @@
 {
-  "schema_version": "1.0",
+  "compatibility_version": "1.1.0",
   "repository": "agent-resource-manifest",
-  "requires": [
-    "agent-foundation-spec",
-    "agent-schema-registry"
+  "policy": "Declared dependencies describe contract relationships only; they do not prove runtime interoperability. A dependency is marked tested only when reproducible cross-repository test evidence is published.",
+  "dependencies": [
+    {
+      "repository_id": "foundation",
+      "version_range": "*",
+      "status": "declared",
+      "evidence": []
+    },
+    {
+      "repository_id": "schema-registry",
+      "version_range": "*",
+      "status": "declared",
+      "evidence": []
+    },
+    {
+      "repository_id": "identity-trust",
+      "version_range": "*",
+      "status": "declared",
+      "evidence": []
+    }
   ],
-  "provides": [
-    "resource.manifest"
-  ],
-  "format": "JSON",
-  "schema_dialect": "JSON Schema 2020-12"
+  "tested_combinations": [],
+  "breaking_change_policy": "Major contract version for removed or renamed required fields, semantic changes, or weakened security guarantees; minor for additive optional fields; patch for editorial corrections."
 }
