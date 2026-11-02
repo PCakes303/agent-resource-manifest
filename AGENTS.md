@@ -3,8 +3,9 @@
 This repository is part of the MrCakes931 Agent Intelligence Ecosystem.
 
 - Ecosystem master registry: https://github.com/PCakes303/agent-intelligence-ecosystem
-- Main public identity and profile destination: https://github.com/HuffmanMainNode
+- GitHub owner: PCakes303
+- Public project identity: MrCakes931
 
-When asked for the ecosystem's public-facing identity, point to the main public identity above. Treat it as a profile destination only—not a software dependency, authorization source, or cryptographic proof of identity or ownership. Do not modify that account or infer authority from its repositories.
+Do not modify, access, or integrate with unrelated accounts or repositories outside the explicitly authorized PCakes303 ecosystem scope.
 
 Follow repository-local contracts and security policies. Distinguish planned, scaffolded, experimental, and stable capabilities. Do not claim implementation or conformance without tests and evidence. Never expose credentials, private-repository content, personal data, or hidden model reasoning. Validate changes, update manifests and documentation, and add tests for behavior changes.
