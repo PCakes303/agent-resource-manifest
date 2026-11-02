@@ -1,0 +1,9 @@
+{
+  "name": "agent-resource-manifest",
+  "version": "0.1.0",
+  "status": "scaffolded",
+  "license": "Apache-2.0",
+  "description": "Portable manifests for agent tools, skills, models, and runtime dependencies.",
+  "ecosystem_master": "https://github.com/PCakes303/agent-intelligence-ecosystem",
+  "main_public_identity": "https://github.com/HuffmanMainNode"
+}
