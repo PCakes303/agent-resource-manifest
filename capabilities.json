@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "repository": "agent-resource-manifest",
+  "capabilities": [
+    {
+      "id": "resource.manifest",
+      "status": "scaffolded",
+      "description": "Declarative resource manifest format."
+    },
+    {
+      "id": "resource.validation",
+      "status": "planned",
+      "description": "Reference validator and policy checks."
+    }
+  ]
+}
