@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "repository": "agent-resource-manifest",
+  "requires": [
+    "agent-foundation-spec",
+    "agent-schema-registry"
+  ],
+  "provides": [
+    "resource.manifest"
+  ],
+  "format": "JSON",
+  "schema_dialect": "JSON Schema 2020-12"
+}
