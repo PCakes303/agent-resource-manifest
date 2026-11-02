@@ -31,6 +31,15 @@ A manifest describes a resource and its requested permissions; it does not grant
 ## Status
 Scaffolded, v0.1.0. The format, example, reference validator, tests, and CI are initial contracts—not a production package manager or execution runtime.
 
+## Entry-level build
+
+Start with the runnable starter build:
+
+    python tools/starter_build.py
+    python -m unittest discover -s tests -v
+
+See [Entry-level build guide](docs/ENTRY-LEVEL-BUILD.md) for Starter → Developer → Production progression.
+
 ## Ecosystem
 Master registry: https://github.com/PCakes303/agent-intelligence-ecosystem
 
