@@ -28,6 +28,10 @@ Requires Python 3.10+; no third-party packages are needed.
 ## Security model
 A manifest describes a resource and its requested permissions; it does not grant permission to execute it. Consumers must authenticate publishers, verify artifacts against a trusted digest source, resolve dependencies against approved registries, enforce resource limits, and authorize every permission independently. A digest alone does not prove publisher identity. Never auto-execute a resource solely because its manifest validates.
 
+## License status
+
+The repository's code, documentation, schemas, examples, and other materials do not yet have an approved license decision. No root `LICENSE` file or GitHub license declaration is present. Reuse and redistribution rights must not be assumed; licensing remains pending repository-specific review.
+
 ## Status
 Scaffolded, v0.1.0. The format, example, reference validator, tests, and CI are initial contracts—not a production package manager or execution runtime.
 
