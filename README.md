@@ -43,5 +43,6 @@ See [Entry-level build guide](docs/ENTRY-LEVEL-BUILD.md) for Starter → Develop
 ## Ecosystem
 Master registry: https://github.com/PCakes303/agent-intelligence-ecosystem
 
-Main public identity: https://github.com/HuffmanMainNode
+Public project identity: **MrCakes931**  
+GitHub owner: `PCakes303`
 
